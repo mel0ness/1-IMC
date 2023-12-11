@@ -12,3 +12,90 @@ body {
   background: linear-gradient(to right, #36d1dc, #5b86e5);
   padding: clamp(20px, 5vw, 50px) 10px 10px;
 }
+
+.Global {
+  width: 40%;
+  background-color: #f1f1f1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border-bottom:1px solid #c0c0c0;
+  border-left: 1px solid #8d8d8d;
+  border-right: 1px solid #488ccc;
+  box-shadow: 0 1px #3c7daf;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: Raleway;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+fieldset {
+  border:  none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0;
+
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 5px 5px #b1b1b1;
+}
+
+label {
+  font-size: 12px;
+}
+
+button {
+  margin-top: 50px;
+  background-color: #fabe33;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+}
+
+.result {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 36px;
+}
+
+.comment {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: Raleway;
+}
