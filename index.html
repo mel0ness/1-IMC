@@ -21,14 +21,15 @@
       <h1>Calcul <span class="strong">d'IMC</span></h1>
       <fieldset>
         <div class="input"><label for="taille">Votre taille en centimètres, Ex : 180</label><input type="text"
-            id="taille" name="poids" placeholder="Votre taille en centimètres"></div>
+            id="taille" name="taille" placeholder="Votre taille en centimètres"></div>
         <div class="input"><label for="poids">Votre poids en Kg, Ex : 80</label><input type="text" id="poids"
             name="poids" placeholder="Votre poids en Kg"></div>
       </fieldset>
-      <button>Calculer un IMC</button>
+      <button id="calcul">Calculer un IMC</button>
+      <div id="error"></div>
     </form>
-    <div class="result">0</div>
-    <div class="comment">En attente du résultat...</div>
+    <div class="result" id="result">0</div>
+    <div class="comment" id="comment">En attente du résultat...</div>
   </div>
 
 

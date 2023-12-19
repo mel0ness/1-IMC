@@ -99,3 +99,35 @@ button {
   margin-bottom: 30px;
   font-family: Raleway;
 }
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 1125px) {
+  .Global {
+    width: 80%;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  fieldset {
+    flex-direction: column;
+  }
+  
+  .input {
+    align-items: center;  
+  }
+}
+
+@media (max-width: 360px) {
+  form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
