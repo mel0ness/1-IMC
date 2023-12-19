@@ -70,6 +70,6 @@ const Index = BMIData.find(data => {
   else if (typeof data.range === "number" && Resultat > data.range) return data;
 })
 
-Comment.style.color = `${Index.color}`;
-Comment.textContent = `${Index.name}`
+Comment.style.color = Index.color;
+Comment.textContent = Index.name;
 }
