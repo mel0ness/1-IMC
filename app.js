@@ -59,29 +59,17 @@ Comment.textContent = "En attente du résultat...";
     Resultat = ((Poids / (TailleM * TailleM)).toFixed(1))
     Result.textContent = Resultat;
 
-    if(BMIData[0].range[0] < Resultat && Resultat <= BMIData[0].range[1]) {
-      Comment.style.color = BMIData[0].color;
-      Comment.textContent = BMIData[0].name;  
-    }
-    else if(BMIData[1].range[0] < Resultat && Resultat <= BMIData[1].range[1]) {
-      Comment.style.color = BMIData[1].color;
-      Comment.textContent = BMIData[1].name; 
-    }
-    else if(BMIData[2].range[0] < Resultat && Resultat <= BMIData[2].range[1]) {
-      Comment.style.color = BMIData[2].color;
-      Comment.textContent = BMIData[2].name;  
-    }
-    else if(BMIData[3].range[0] < Resultat && Resultat <= BMIData[3].range[1]) {
-      Comment.style.color = BMIData[3].color;
-      Comment.textContent = BMIData[3].name;  
-    }
-    else if(BMIData[4].range[0] < Resultat && Resultat <= BMIData[4].range[1]) {
-      Comment.style.color = BMIData[4].color;
-      Comment.textContent = BMIData[4].name;  
-    }
-    else if(BMIData[5].range < Resultat) {
-      Comment.style.color = BMIData[5].color;
-      Comment.textContent = BMIData[5].name;  
-    }
+
+    ResultFunction(Resultat);
   }
 })
+
+const ResultFunction = (Resultat) => {
+const Index = BMIData.find(data => {
+  if(Resultat > data.range[0] && Resultat <= data.range[1]) return data;
+  else if (typeof data.range === "number" && Resultat > data.range) return data;
+})
+
+Comment.style.color = `${Index.color}`;
+Comment.textContent = `${Index.name}`
+}
